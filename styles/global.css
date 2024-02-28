@@ -2,44 +2,26 @@
 
 /* for 2xl   */
 /* @media (max-width: 1536px) {
-  .container {
-    max-width: 1280px;
-  }
 } */
 
 /* for xl   */
 /* @media (max-width: 1280px) {
-   .container {
-    max-width: 1024px;
-  }
 } */
 
 /* for large */
 /* @media (max-width: 1024px) {
-  .container {
-    max-width: 768px;
-  }
 } */
 
 /* for medium */
 /* @media (max-width: 768px) {
-  .container {
-    max-width: 640px;
-  }
 } */
 
 /* for small */
 /* @media (max-width: 640px) {
-  .container {
-    max-width: 475px;
-  }
 } */
 
 /* for extra small */
 /* @media (max-width: 400px) {
-  .container {
-    width: 100%;
-  }
 } */
 
 :root {
@@ -97,5 +79,46 @@ body {
   background-color: var(--clr-blue);
   color: var(--clr-light);
   font-family: "Newsreader", serif;
-  font-size: var(--size-lg);
+}
+
+/* for desktop first */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* for xl   */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* for large */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* for medium */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* for small */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* for extra small */
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
 }
