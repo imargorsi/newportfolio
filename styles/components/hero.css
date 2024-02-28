@@ -1,0 +1,166 @@
+.full-background {
+  background-image: url("../public/background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 16rem 0rem;
+}
+
+.firstsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 150px;
+}
+
+.hero__heading {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.profileimg {
+  width: 300px;
+  margin-bottom: 15rem;
+}
+
+.hero__heading > span {
+  color: var(--clr-yellow);
+  font-weight: 800;
+  font-size: 5.1rem;
+}
+
+.hero__desc {
+  font-size: 1.5rem;
+  color: var(--clr-grey);
+  text-align: center;
+  width: 70%;
+  transition: color 0.3s linear;
+  padding-top: var(--size-md);
+}
+
+.hero__desc:hover {
+  color: var(--clr-light);
+}
+
+.buttons {
+  padding-top: var(--size-md);
+  display: flex;
+  gap: var(--size-sm);
+}
+
+.mobileheading {
+  display: none;
+}
+
+/* for desktop first *
+
+/* for 2xl   */
+/* @media (max-width: 1536px) {
+} */
+
+/* for xl   */
+@media (max-width: 1280px) {
+  .firstsection {
+    gap: 1rem;
+  }
+
+  .hero__heading {
+    font-size: 2.4rem;
+  }
+
+  .hero__heading > span {
+    font-size: 4rem;
+  }
+
+  .hero__desc {
+    width: 90%;
+  }
+}
+
+/* for large */
+@media (max-width: 1024px) {
+  .hero__heading {
+    font-size: 1.8rem;
+  }
+
+  .hero__heading > span {
+    font-size: 3.2rem;
+  }
+
+  .hero__desc {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+}
+
+/* for medium */
+@media (max-width: 768px) {
+  .hero__heading {
+    font-size: 1.3rem;
+  }
+
+  .hero__heading > span {
+    font-size: 2.5rem;
+  }
+
+  .hero__desc {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+}
+
+/* for small */
+@media (max-width: 640px) {
+  .hero__heading {
+    display: none;
+  }
+  .mobileheading {
+    display: block;
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .mobileheading > span {
+    color: var(--clr-yellow);
+  }
+
+  .profileimg {
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .hero {
+    padding: 4rem;
+  }
+
+  .full-background {
+    background-image: none;
+  }
+
+  .hero__desc {
+    font-size: 1.2rem;
+  }
+}
+
+/* for extra small */
+@media (max-width: 400px) {
+  .mobileheading {
+    font-size: 1.5rem;
+  }
+
+  .hero__desc {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    padding-inline: 1rem;
+  }
+}

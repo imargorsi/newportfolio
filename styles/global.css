@@ -75,6 +75,30 @@ button {
   padding-inline: 0.5rem;
 }
 
+.full-background {
+  width: 100%;
+}
+
+.btn {
+  background-color: var(--clr-yellow);
+  border-radius: 30px;
+  padding: var(--size-sm) var(--size-lg);
+  color: var(--clr-blue);
+  font-size: 1.5rem;
+  border: 1px solid var(--clr-yellow);
+  transition: all 0.4s linear;
+}
+
+.btn:hover {
+  transform: translateY(-10px);
+}
+
+.transparent {
+  background-color: transparent;
+  color: var(--clr-light);
+  border: 1px solid var(--clr-light);
+}
+
 body {
   background-color: var(--clr-blue);
   color: var(--clr-light);
@@ -120,5 +144,9 @@ body {
 @media (max-width: 400px) {
   .container {
     width: 100%;
+  }
+
+  .btn {
+    font-size: 1.2rem;
   }
 }
