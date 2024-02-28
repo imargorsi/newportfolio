@@ -1,0 +1,101 @@
+/* for desktop first *
+
+/* for 2xl   */
+/* @media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+} */
+
+/* for xl   */
+/* @media (max-width: 1280px) {
+   .container {
+    max-width: 1024px;
+  }
+} */
+
+/* for large */
+/* @media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+} */
+
+/* for medium */
+/* @media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+} */
+
+/* for small */
+/* @media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+} */
+
+/* for extra small */
+/* @media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+} */
+
+:root {
+  --clr-blue: #03030f;
+  --clr-light: #f1f5f9;
+  --clr-yellow: #cbff04;
+  --clr-grey: #737374;
+  --size-xl: 4rem;
+  --size-lg: 3rem;
+  --size-md: 2rem;
+  --size-sm: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em + 0.5rem);
+}
+html {
+  scroll-behavior: smooth;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1536px;
+  margin-inline: auto;
+  padding-inline: 0.5rem;
+}
+
+body {
+  background-color: var(--clr-blue);
+  color: var(--clr-light);
+  font-family: "Newsreader", serif;
+  font-size: var(--size-lg);
+}
