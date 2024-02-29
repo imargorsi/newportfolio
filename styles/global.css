@@ -99,6 +99,19 @@ button {
   border: 1px solid var(--clr-light);
 }
 
+.desc {
+  color: var(--clr-grey);
+  transition: all 0.5s linear;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  line-height: 2.3rem;
+}
+
+.desc:hover {
+  color: var(--clr-light);
+  transform: translateY(3px);
+}
+
 body {
   background-color: var(--clr-blue);
   color: var(--clr-light);
@@ -138,15 +151,24 @@ body {
   .container {
     max-width: 475px;
   }
+
+  .desc {
+    line-height: var(--size-md);
+  }
 }
 
 /* for extra small */
 @media (max-width: 400px) {
   .container {
     width: 100%;
+    padding-inline: 1.3rem;
   }
 
   .btn {
     font-size: 1.2rem;
+  }
+
+  .desc {
+    line-height: 1.6rem;
   }
 }

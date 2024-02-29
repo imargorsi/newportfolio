@@ -1,5 +1,5 @@
 .full-background {
-  background-image: url("../public/background.jpg");
+  background-image: url("/background.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -38,19 +38,6 @@
   font-size: 5.1rem;
 }
 
-.hero__desc {
-  font-size: 1.5rem;
-  color: var(--clr-grey);
-  text-align: center;
-  width: 70%;
-  transition: color 0.3s linear;
-  padding-top: var(--size-md);
-}
-
-.hero__desc:hover {
-  color: var(--clr-light);
-}
-
 .buttons {
   padding-top: var(--size-md);
   display: flex;
@@ -59,6 +46,13 @@
 
 .mobileheading {
   display: none;
+}
+
+.herodesc {
+  padding-top: var(--size-sm);
+  width: 75%;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 /* for desktop first *
@@ -81,8 +75,8 @@
     font-size: 4rem;
   }
 
-  .hero__desc {
-    width: 90%;
+  .herodesc {
+    width: 94%;
   }
 }
 
@@ -96,9 +90,8 @@
     font-size: 3.2rem;
   }
 
-  .hero__desc {
+  .herodesc {
     width: 100%;
-    font-size: 1.3rem;
   }
 }
 
@@ -112,9 +105,8 @@
     font-size: 2.5rem;
   }
 
-  .hero__desc {
-    width: 100%;
-    font-size: 1.3rem;
+  .herodesc {
+    font-size: 1.2rem;
   }
 }
 
@@ -147,8 +139,8 @@
     background-image: none;
   }
 
-  .hero__desc {
-    font-size: 1.2rem;
+  .herodesc {
+    font-size: 1rem;
   }
 }
 
@@ -156,11 +148,5 @@
 @media (max-width: 400px) {
   .mobileheading {
     font-size: 1.5rem;
-  }
-
-  .hero__desc {
-    padding-top: 0.5rem;
-    font-size: 1rem;
-    padding-inline: 1rem;
   }
 }

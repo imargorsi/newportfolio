@@ -1,0 +1,262 @@
+.topsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topsection > hr {
+  width: 600px;
+  border-radius: 30px;
+  gap: 1rem;
+  color: var(--clr-light);
+}
+
+.aboutsection {
+  margin: 5rem 0rem;
+}
+
+.aboutsection__heading {
+  font-size: var(--size-xl);
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: var(--size-sm);
+}
+
+.aboutdesc {
+  margin: 0 auto;
+  width: 70%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.skillsection {
+  display: flex;
+  align-items: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  gap: 0px;
+  flex-basis: 60%;
+}
+
+.skillsectionimg {
+  width: 600px;
+  height: 600px;
+}
+
+.skill-item {
+  border-right: 2px solid var(--clr-grey);
+  border-bottom: 2px solid var(--clr-grey);
+  padding: var(--size-md) var(--size-sm);
+}
+
+.skill-item > h2 {
+  font-size: var(--size-md);
+  font-weight: 500;
+  color: var(--clr-white);
+}
+
+.skill-item > p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  padding-top: var(--size-sm);
+  line-height: 1.7rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.skill-item > li {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--clr-white);
+  padding-top: var(--size-sm);
+  line-height: 1.7rem;
+}
+
+.skill-item:nth-child(2n) {
+  border-right: none;
+}
+.skill-item:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+/* for desktop first *
+
+/* for 2xl   */
+@media (max-width: 1536px) {
+  .aboutsection__heading {
+    font-size: var(--size-lg);
+  }
+
+  .aboutdesc {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .skill-item > p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .skill-item > li {
+    font-size: 1rem;
+  }
+  .skillsectionimg {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+/* for xl   */
+@media (max-width: 1280px) {
+  .aboutsection__heading {
+    font-size: var(--size-lg);
+  }
+
+  .aboutdesc {
+    text-align: center;
+    width: 100%;
+  }
+
+  .skillsectionimg {
+    width: 350px;
+    height: 400px;
+  }
+
+  .skill-item {
+    padding: var(--size-md) 0.8rem;
+  }
+
+  .skill-item > p {
+    font-size: 0.81rem;
+    line-height: 1.5rem;
+  }
+
+  .skill-item > li {
+    font-size: 0.8rem;
+  }
+}
+
+/* for large */
+@media (max-width: 1024px) {
+  .aboutsection {
+    margin: 0;
+  }
+
+  .skills-container {
+    flex-basis: 100%;
+  }
+  .skillsection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skillsectionimg {
+    width: 600px;
+    height: 300px;
+  }
+
+  .skill-item {
+    padding: var(--size-md) 1rem;
+  }
+
+  .skill-item > p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .skill-item > li {
+    font-size: 1.1rem;
+  }
+}
+
+/* for medium */
+@media (max-width: 768px) {
+  .skill-item {
+    padding: var(--size-md) 1rem;
+  }
+
+  .skill-item > p {
+    font-size: 0.82rem;
+    line-height: 1.5rem;
+  }
+
+  .skill-item > li {
+    font-size: 0.85rem;
+  }
+
+  .aboutsection__heading {
+    font-size: var(--size-lg);
+  }
+
+  .aboutdesc {
+    font-size: 1.2rem;
+    line-height: 0.8rem;
+  }
+}
+/* for small */
+@media (max-width: 640px) {
+  .skill-item {
+    padding: var(--size-md) 1rem;
+  }
+
+  .aboutdesc {
+    font-size: 1rem;
+  }
+
+  .skill-item > p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .skill-item > li {
+    font-size: 1rem;
+  }
+
+  .aboutsection__heading {
+    font-size: var(--size-md);
+  }
+
+  .aboutdesc {
+    font-size: 1.11rem;
+    line-height: 0.8rem;
+  }
+
+  .skills-container {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    gap: var(--size-md);
+  }
+
+  .skill-item {
+    border-bottom: none;
+    padding: 0;
+    border-right: none;
+  }
+
+  .skill-item:nth-child(2n) {
+    border-right: none;
+  }
+  .skill-item:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+}
+
+/* for extra small */
+@media (max-width: 400px) {
+  .aboutdesc {
+    line-height: 12rem;
+  }
+
+  .skill-item > h2 {
+    font-size: 1.8rem;
+  }
+
+  .skill-item > p {
+    font-size: 0.91rem;
+    line-height: 1.6rem;
+  }
+}
