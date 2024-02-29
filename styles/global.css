@@ -129,9 +129,9 @@ button {
 }
 
 .light-mode {
-  --clr-black: #95a5a6;
+  --clr-black: #fef5e5;
   --clr-light: #0f0f0f;
-  --clr-yellow: #cbff04;
+  --clr-yellow: #ff7426;
 }
 
 body {

@@ -7,5 +7,7 @@ import "./styles/components/contact.css";
 import "./styles/global.css";
 
 import darkmode from "./js/darkmode";
+import mobileNav from "./js/mobileNav";
 
 darkmode();
+mobileNav();

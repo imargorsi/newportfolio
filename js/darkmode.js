@@ -1,8 +1,11 @@
 const darkmode = () => {
-  const checkbox = document.getElementById("checkbox");
+  const themeToggle = document.querySelectorAll("#checkbox");
   const body = document.querySelector("body");
-  checkbox.addEventListener("change", () => {
-    body.classList.toggle("light-mode");
+
+  themeToggle.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      body.classList.toggle("light-mode");
+    });
   });
 };
 
