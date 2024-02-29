@@ -1,29 +1,27 @@
-.full-background {
-  background-image: url("/background.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: auto;
-  padding: 16rem 0rem;
+  padding-top: 20rem;
+  padding-bottom: var(--size-sm);
+}
+
+.resume__heading {
+  color: var(--clr-light);
 }
 
 .firstsection {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
   height: 150px;
 }
 
 .hero__heading {
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 600;
 }
 
@@ -39,7 +37,7 @@
 }
 
 .buttons {
-  padding-top: var(--size-md);
+  padding-top: var(--size-lg);
   display: flex;
   gap: var(--size-sm);
 }
@@ -51,20 +49,18 @@
 .herodesc {
   padding-top: var(--size-sm);
   width: 75%;
-  font-size: 1.5rem;
+  font-size: var(--size-normal);
   text-align: center;
 }
 
 /* for desktop first *
 
 /* for 2xl   */
-/* @media (max-width: 1536px) {
-} */
 
 /* for xl   */
 @media (max-width: 1280px) {
   .firstsection {
-    gap: 1rem;
+    gap: var(--size-sm);
   }
 
   .hero__heading {
@@ -72,7 +68,7 @@
   }
 
   .hero__heading > span {
-    font-size: 4rem;
+    font-size: var(--size-xl);
   }
 
   .herodesc {
@@ -83,7 +79,7 @@
 /* for large */
 @media (max-width: 1024px) {
   .hero__heading {
-    font-size: 1.8rem;
+    font-size: var(--size-normal);
   }
 
   .hero__heading > span {
@@ -128,11 +124,11 @@
 
   .profileimg {
     width: 200px;
-    margin-bottom: 1rem;
+    margin-bottom: var(--size-sm);
   }
 
   .hero {
-    padding: 4rem;
+    padding: var(--size-xl);
   }
 
   .full-background {
@@ -140,17 +136,19 @@
   }
 
   .herodesc {
-    font-size: 1rem;
+    font-size: var(--size-sm);
   }
 }
 
 /* for extra small */
 @media (max-width: 400px) {
   .mobileheading {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
-  .herodesc {
-    padding-inline: 1rem;
+  .buttons {
+    padding-top: var(--size-lg);
+    display: flex;
+    gap: 0.5rem;
   }
 }

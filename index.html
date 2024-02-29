@@ -50,7 +50,13 @@
       </svg>
 
       <div class="links">
-        <p class="resume__heading">Download Resume</p>
+        <a
+          class="resume__heading"
+          href="https://drive.google.com/file/d/1QtdciTf-budma487ZYQleRme7unFT7zq/view"
+          target="_blank"
+        >
+          Resume</a
+        >
 
         <hr class="header__hr" />
         <div class="social">
@@ -58,32 +64,40 @@
           <i class="fa-brands fa-square-github"></i>
           <i class="fa-brands fa-linkedin"></i>
         </div>
+        <hr class="header__hr" />
+        <div>
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label for="checkbox" class="checkbox-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="ball"></span>
+          </label>
+        </div>
       </div>
     </header>
-    <div class="full-background">
-      <div class="hero container">
-        <div class="firstsection">
-          <h2 class="hero__heading">Hello, Everyone</h2>
-          <img class="profileimg" src="/final.png" alt="" />
-          <h2 class="hero__heading">I am AR GORSI</h2>
-        </div>
-        <h2 class="hero__heading">
-          <span>Full-Stack Web Developer</span>
-        </h2>
-        <h2 class="mobileheading">
-          Hello, Everyone, I am AR GORSI
-          <span>Full-Stack Web Developer</span>
-        </h2>
-        <p class="desc herodesc">
-          A passionate Full-Stack Web Developer dedicated to crafting immersive
-          digital experiences. With a blend of coding expertise and a flair for
-          design, I thrive on bringing visions to life through innovative
-          website development. Let's create something extraordinary together!
-        </p>
-        <div class="buttons">
-          <button class="btn">Hire Me</button>
-          <button class="btn transparent">Portfolio</button>
-        </div>
+
+    <div class="hero container">
+      <div class="firstsection">
+        <h2 class="hero__heading">Hey, Everyone</h2>
+        <img class="profileimg" src="/final.png" alt="" />
+        <h2 class="hero__heading">I am AR GORSI</h2>
+      </div>
+      <h2 class="hero__heading">
+        <span>A Full-Stack Web Developer</span>
+      </h2>
+      <h2 class="mobileheading">
+        Hello, Everyone, I am AR GORSI
+        <span>Full-Stack Web Developer</span>
+      </h2>
+      <p class="desc herodesc">
+        A passionate Full-Stack Web Developer dedicated to crafting immersive
+        digital experiences. With a blend of coding expertise and a flair for
+        design, I thrive on bringing visions to life through innovative website
+        development. Let's create something extraordinary together!
+      </p>
+      <div class="buttons">
+        <button class="btn">Hire Me</button>
+        <button class="btn transparent">Portfolio</button>
       </div>
     </div>
 
@@ -121,7 +135,7 @@
         <div class="skills-container">
           <div class="skill-item">
             <h2>Core Skills:</h2>
-            <p class="desc">
+            <p>
               Proficient in JavaScript, with basic proficiency in PHP and C++,
               skilled in frameworks and libraries such as React, Redux, and
               Express, adept in database management with SQL and PostgreSQL, and
@@ -131,7 +145,7 @@
           </div>
           <div class="skill-item">
             <h2>Experience:</h2>
-            <p class="desc">
+            <p>
               I worked as a frontend dev for 3 years at Dream Catcher Marketing
               and recently completed a 3-month bootcamp in MERN Stack at
               Knowledge Streams. During my time at Dream Catcher, I managed
@@ -166,39 +180,42 @@
       </p>
 
       <div class="projects__container">
-        <a href="#">
+        <a
+          href="https://github.com/imargorsi/RenaissanceReads"
+          target="0_blank"
+        >
           <div class="singleproject">
-            <div class="project__img"></div>
+            <div class="project__img rr"></div>
             <div class="project__details">
-              <h2>Project #1</h2>
+              <h2>RenaissanceReads</h2>
               <p>
-                This was a great project had very fun while creating this love
-                to do something like this again
+                Innovative online book platform where users can create profiles,
+                submit books, and post reviews.
               </p>
             </div>
           </div>
         </a>
 
-        <a href="#">
+        <a href="https://www.dcmarketing.agency/" target="0_blank">
           <div class="singleproject">
-            <div class="project__img"></div>
+            <div class="project__img dcm"></div>
             <div class="project__details">
-              <h2>Project #1</h2>
+              <h2>DC Marketing</h2>
               <p>
-                This was a great project had very fun while creating this love
-                to do something like this again
+                Designed and developed a responsive and interactive website for
+                a US-based marketing agency.
               </p>
             </div>
           </div>
         </a>
-        <a href="#">
+        <a href="https://icodethis.com/imargorsi" target="_blank">
           <div class="singleproject">
-            <div class="project__img"></div>
+            <div class="project__img icodethis"></div>
             <div class="project__details">
-              <h2>Project #1</h2>
+              <h2>ICodeThis</h2>
               <p>
-                This was a great project had very fun while creating this love
-                to do something like this again
+                Completed over 30 small-scale website development projects on
+                the IcodeThis website.
               </p>
             </div>
           </div>
@@ -212,7 +229,9 @@
             it's a website, an app, or a creative project, reach out to me
             today, and let's start turning your ideas into reality.
           </p>
-          <button class="btn">Contact Me</button>
+          <button class="btn">
+            <a href="mailto:hey@gorsi.dev">Contact Me</a>
+          </button>
         </div>
       </div>
     </div>

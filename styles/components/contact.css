@@ -1,6 +1,6 @@
 .contact {
   margin-top: 10rem;
-  background-color: #0f0f1a;
+  border: 1px solid var(--clr-light);
   width: 100%;
   border-radius: 55px;
   padding: 5rem 2rem;

@@ -25,14 +25,20 @@
 } */
 
 :root {
-  --clr-blue: #03030f;
-  --clr-light: #f1f5f9;
+  --clr-black: #0f0f0f;
+  --clr-light: #ecf0f1;
   --clr-yellow: #cbff04;
   --clr-grey: #737374;
   --size-xl: 4rem;
   --size-lg: 3rem;
   --size-md: 2rem;
+  --size-normal: 1.5rem;
   --size-sm: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-black);
 }
 
 body::-webkit-scrollbar {
@@ -86,17 +92,14 @@ button {
   max-width: 1536px;
   margin-inline: auto;
   padding-inline: 0.5rem;
-}
-
-.full-background {
-  width: 100%;
+  overflow: hidden;
 }
 
 .btn {
   background-color: var(--clr-yellow);
   border-radius: 30px;
   padding: var(--size-sm) var(--size-lg);
-  color: var(--clr-blue);
+  color: var(--clr-black);
   font-size: 1.5rem;
   border: 1px solid var(--clr-yellow);
   transition: all 0.4s linear;
@@ -126,7 +129,7 @@ button {
 }
 
 body {
-  background-color: var(--clr-blue);
+  background-color: var(--clr-black);
   color: var(--clr-light);
   font-family: "Newsreader", serif;
 }
@@ -174,11 +177,11 @@ body {
 @media (max-width: 400px) {
   .container {
     width: 100%;
-    padding-inline: 1.3rem;
+    padding-inline: var(--size-normal);
   }
 
   .btn {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .desc {

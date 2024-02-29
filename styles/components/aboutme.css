@@ -1,11 +1,15 @@
+.aboutme {
+  margin-top: var(--size-xl);
+}
 .topsection {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: var(--size-md);
 }
 
 .topsection > hr {
-  width: 600px;
+  width: 100%;
   border-radius: 30px;
   gap: 1rem;
   color: var(--clr-light);
@@ -32,15 +36,15 @@
 
 .skillsection {
   display: flex;
-  align-items: center;
+  align-items: space-between;
 }
 
 .skills-container {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
-  gap: 0px;
-  flex-basis: 60%;
+  gap: 20px;
+  flex-basis: 70%;
 }
 
 .skillsectionimg {
@@ -49,38 +53,33 @@
 }
 
 .skill-item {
-  border-right: 2px solid var(--clr-grey);
-  border-bottom: 2px solid var(--clr-grey);
-  padding: var(--size-md) var(--size-sm);
+  padding: var(--size-md);
+
+  border-radius: var(--size-sm);
+  border: 1px solid var(--clr-light);
 }
 
 .skill-item > h2 {
   font-size: var(--size-md);
   font-weight: 500;
-  color: var(--clr-white);
+  color: var(--clr-light);
 }
 
 .skill-item > p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 200;
   padding-top: var(--size-sm);
   line-height: 1.7rem;
   font-family: "Poppins", sans-serif;
+  color: var(--clr-light);
 }
 
 .skill-item > li {
   font-size: 1.3rem;
   font-weight: 300;
-  color: var(--clr-white);
+  color: var(--clr-light);
   padding-top: var(--size-sm);
   line-height: 1.7rem;
-}
-
-.skill-item:nth-child(2n) {
-  border-right: none;
-}
-.skill-item:nth-last-child(-n + 2) {
-  border-bottom: none;
 }
 
 /* for desktop first *
@@ -247,6 +246,10 @@
 
 /* for extra small */
 @media (max-width: 400px) {
+  .aboutme {
+    margin-top: var(--size-normal);
+  }
+
   .aboutdesc {
     line-height: 12rem;
   }
