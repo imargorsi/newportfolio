@@ -222,4 +222,13 @@ header {
   .navicon {
     color: var(--clr-black);
   }
+
+  .mobilenav {
+    display: none;
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 0px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
