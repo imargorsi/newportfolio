@@ -1,0 +1,120 @@
+.contact {
+  margin-top: 10rem;
+  background-color: #0f0f1a;
+  width: 100%;
+  border-radius: 55px;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-md);
+}
+
+.contact > h2 {
+  font-size: var(--size-lg);
+  font-weight: 500;
+}
+
+.contact > p {
+  font-size: var(--size-md);
+  font-weight: 300;
+  width: 70ch;
+  text-align: center;
+}
+
+/* for desktop first *
+
+/* for 2xl   */
+@media (max-width: 1536px) {
+  .contact {
+    padding: 3rem;
+
+    text-align: center;
+  }
+
+  .contact > h2 {
+    font-size: var(--size-md);
+  }
+
+  .contact > p {
+    font-size: 1.5rem;
+    width: 70ch;
+  }
+}
+
+/* for xl   */
+@media (max-width: 1280px) {
+  .contact {
+    padding: 4rem;
+    text-align: center;
+  }
+
+  .contact > h2 {
+    font-size: var(--size-md);
+  }
+
+  .contact > p {
+    font-size: 1.5rem;
+    width: 65ch;
+  }
+}
+
+/* for large */
+@media (max-width: 1024px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+
+  .contact > h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact > p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+
+/* for medium */
+@media (max-width: 768px) {
+  .contact > h2 {
+    font-size: 2rem;
+  }
+
+  .contact > p {
+    font-size: 1.4rem;
+  }
+}
+
+/* for small */
+@media (max-width: 640px) {
+  .contact {
+    padding: 3rem 2rem;
+  }
+
+  .contact > h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact > p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+
+/* for extra small */
+@media (max-width: 400px) {
+  .contact {
+    gap: var(--size-sm);
+    padding: 3rem 1rem;
+  }
+
+  .contact > h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact > p {
+    font-size: 1.2rem;
+  }
+}

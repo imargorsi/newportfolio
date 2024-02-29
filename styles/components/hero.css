@@ -149,4 +149,8 @@
   .mobileheading {
     font-size: 1.5rem;
   }
+
+  .herodesc {
+    padding-inline: 1rem;
+  }
 }
