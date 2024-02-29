@@ -143,8 +143,17 @@ header {
 /* for extra small */
 @media (max-width: 400px) {
   header {
-    margin-top: 0;
     padding: var(--size-sm);
     border-radius: 0px;
+    border: none;
+    background-color: var(--clr-light);
+    margin-top: 0;
+  }
+  .logo > h2 {
+    color: var(--clr-black);
+  }
+
+  .navicon {
+    color: var(--clr-black);
   }
 }

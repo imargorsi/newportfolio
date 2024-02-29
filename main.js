@@ -5,3 +5,7 @@ import "./styles/components/aboutme.css";
 import "./styles/components/projects.css";
 import "./styles/components/contact.css";
 import "./styles/global.css";
+
+import darkmode from "./js/darkmode";
+
+darkmode();

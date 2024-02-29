@@ -3,7 +3,7 @@
   border: 1px solid var(--clr-light);
   width: 100%;
   border-radius: 55px;
-  padding: 5rem 2rem;
+  padding: 5rem var(--size-md);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +28,7 @@
 /* for 2xl   */
 @media (max-width: 1536px) {
   .contact {
-    padding: 3rem;
+    padding: var(--size-lg);
 
     text-align: center;
   }
@@ -38,7 +38,7 @@
   }
 
   .contact > p {
-    font-size: 1.5rem;
+    font-size: var(--size-normal);
     width: 70ch;
   }
 }
@@ -46,7 +46,7 @@
 /* for xl   */
 @media (max-width: 1280px) {
   .contact {
-    padding: 4rem;
+    padding: var(--size-xl);
     text-align: center;
   }
 
@@ -55,7 +55,7 @@
   }
 
   .contact > p {
-    font-size: 1.5rem;
+    font-size: var(--size-normal);
     width: 65ch;
   }
 }
@@ -63,7 +63,7 @@
 /* for large */
 @media (max-width: 1024px) {
   .contact {
-    padding: 4rem 2rem;
+    padding: var(--size-xl) var(--size-md);
   }
 
   .contact > h2 {
@@ -79,7 +79,7 @@
 /* for medium */
 @media (max-width: 768px) {
   .contact > h2 {
-    font-size: 2rem;
+    font-size: var(--size-md);
   }
 
   .contact > p {
@@ -90,7 +90,7 @@
 /* for small */
 @media (max-width: 640px) {
   .contact {
-    padding: 3rem 2rem;
+    padding: var(--size-lg) var(--size-md);
   }
 
   .contact > h2 {
@@ -107,7 +107,9 @@
 @media (max-width: 400px) {
   .contact {
     gap: var(--size-sm);
-    padding: 3rem 1rem;
+    padding: 0rem;
+    border: none;
+    margin-top: var(--size-xl);
   }
 
   .contact > h2 {
@@ -115,6 +117,6 @@
   }
 
   .contact > p {
-    font-size: 1.2rem;
+    font-size: var(--size-sm);
   }
 }
