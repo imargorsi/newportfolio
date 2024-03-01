@@ -22,14 +22,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <title>Vite App</title>
   </head>
   <body>
     <header class="container">
       <div class="nav">
-        <a class="header__links" href="">About Me</a>
-        <a class="header__links" href="">Portfolio</a>
-        <a class="header__links" href="">Contact</a>
+        <a class="header__links" href="#aboutme">About Me</a>
+        <a class="header__links" href="#portfolio">Portfolio</a>
+        <a class="header__links" href="#contactme">Contact</a>
       </div>
       <div class="logo">
         <h2>AR GORSI</h2>
@@ -61,9 +62,25 @@
 
         <hr class="header__hr" />
         <div class="social">
-          <i class="fa-brands fa-square-x-twitter"></i>
-          <i class="fa-brands fa-square-github"></i>
-          <i class="fa-brands fa-linkedin"></i>
+          <a
+            class="iconshref"
+            href="https://twitter.com/imargorsi"
+            target="_blank"
+            ><i class="fa-brands fa-square-x-twitter"></i
+          ></a>
+
+          <a
+            class="iconshref"
+            href="https://github.com/imargorsi"
+            target="_blank"
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+          <a
+            class="iconshref"
+            href="https://www.linkedin.com/in/imargorsi/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
         </div>
         <hr class="header__hr" />
         <div id="themetoggle">
@@ -79,9 +96,9 @@
 
     <div class="mobilenav">
       <div class="mobiblenav__links">
-        <a class="mobile__nav__link" href="">About Me</a>
-        <a class="mobile__nav__link" href="">Portfolio</a>
-        <a class="mobile__nav__link" href="">Contact Me</a>
+        <a class="mobile__nav__link" href="#aboutme">About Me</a>
+        <a class="mobile__nav__link" href="#portfolio">Portfolio</a>
+        <a class="mobile__nav__link" href="#contactme">Contact Me</a>
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -100,23 +117,36 @@
         </svg>
 
         <hr class="mobilenav__hr" />
-        <a class="mobile__nav__link" href="">Download Resume</a>
+        <a
+          class="mobile__nav__link"
+          href="https://drive.google.com/file/d/1QtdciTf-budma487ZYQleRme7unFT7zq/view"
+          target="_blank"
+          >Download Resume</a
+        >
         <div class="mobilenav__buttons">
-          <i class="fa-brands fa-square-x-twitter"></i>
-          <i class="fa-brands fa-square-github"></i>
-          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://twitter.com/imargorsi" target="_blank">
+            <i class="fa-brands fa-square-x-twitter"></i
+          ></a>
+
+          <a href="https://github.com/imargorsi" target="_blank">
+            <i class="fa-brands fa-square-github"></i
+          ></a>
+
+          <a href="https://www.linkedin.com/in/imargorsi/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i
+          ></a>
         </div>
       </div>
     </div>
 
     <div class="hero container">
       <div class="firstsection">
-        <h2 class="hero__heading">Hey, Everyone</h2>
-        <img class="profileimg" src="/final.png" alt="" />
-        <h2 class="hero__heading">I am AR GORSI</h2>
+        <h2 class="hero__heading firstpart">Hey, Everyone</h2>
+        <img class="profileimg" src="/argorsi__img.webp" alt="" />
+        <h2 class="hero__heading lastpart">I am AR GORSI</h2>
       </div>
       <h2 class="hero__heading">
-        <span>A Full-Stack Web Developer</span>
+        <span class="jobtitle">A Full-Stack Web Developer</span>
       </h2>
       <h2 class="mobileheading">
         Hello, Everyone, I am AR GORSI
@@ -129,12 +159,14 @@
         development. Let's create something extraordinary together!
       </p>
       <div class="buttons">
-        <button class="btn">Hire Me</button>
-        <button class="btn transparent">Portfolio</button>
+        <button class="btn"><a href="#contactme"> Hire Me</a></button>
+        <button class="btn transparent">
+          <a href="#portfolio" class="portfoliobtn">Portfolio</a>
+        </button>
       </div>
     </div>
 
-    <div class="aboutme container">
+    <div class="aboutme container section" id="aboutme">
       <div class="topsection">
         <hr />
         <dotlottie-player
@@ -204,7 +236,7 @@
       </div>
     </div>
 
-    <div class="projects container">
+    <div class="projects container section" id="portfolio">
       <h2 class="aboutsection__heading">See My Latest Work</h2>
 
       <div class="projects__container">
@@ -249,20 +281,21 @@
           </div>
         </a>
       </div>
-      <div class="container">
-        <div class="contact">
-          <h2>Ready to Start Your Project? Send a Message and Let's Begin!</h2>
-          <p>
-            Take the first step towards bringing your vision to life! Whether
-            it's a website, an app, or a creative project, reach out to me
-            today, and let's start turning your ideas into reality.
-          </p>
-          <button class="btn">
-            <a href="mailto:hey@gorsi.dev">Contact Me</a>
-          </button>
-        </div>
+    </div>
+    <div class="container" id="contactme">
+      <div class="contact section">
+        <h2>Ready to Start Your Project? Send a Message and Let's Begin!</h2>
+        <p>
+          Take the first step towards bringing your vision to life! Whether it's
+          a website, an app, or a creative project, reach out to me today, and
+          let's start turning your ideas into reality.
+        </p>
+        <button class="btn">
+          <a href="mailto:hey@gorsi.dev">Contact Me</a>
+        </button>
       </div>
     </div>
+
     <script
       src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
       type="module"

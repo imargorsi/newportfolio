@@ -8,6 +8,9 @@ import "./styles/global.css";
 
 import darkmode from "./js/darkmode";
 import mobileNav from "./js/mobileNav";
+import revealSection from "./js/revealSections";
 
 darkmode();
 mobileNav();
+revealSection();
+lazyLoad();

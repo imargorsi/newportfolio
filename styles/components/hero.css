@@ -1,3 +1,15 @@
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -23,6 +35,14 @@
 .hero__heading {
   font-size: 3.8rem;
   font-weight: 600;
+}
+
+.lastpart {
+  animation: focus-in-expand 2s linear 0s 1 normal none;
+}
+
+.jobtitle {
+  animation: focus-in-expand 3s linear 0s 1 normal none;
 }
 
 .profileimg {

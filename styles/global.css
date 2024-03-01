@@ -24,6 +24,17 @@
 /* @media (max-width: 400px) {
 } */
 
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
 :root {
   --clr-black: #0f0f0f;
   --clr-light: #ecf0f1;
@@ -132,6 +143,15 @@ button {
   --clr-black: #fef5e5;
   --clr-light: #0f0f0f;
   --clr-yellow: #ff7426;
+}
+
+.section__animated {
+  animation: text-focus-in 1s linear 0s 1 normal none;
+}
+
+.section__hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 body {

@@ -1,3 +1,14 @@
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .projects {
   padding: 5rem 0rem;
   margin-top: 6rem;
@@ -30,15 +41,15 @@
 }
 
 .rr {
-  background-image: url("/rr.png");
+  background-image: url("/rr.webp");
 }
 
 .dcm {
-  background-image: url("/dcm.png");
+  background-image: url("/dcm.webp");
 }
 
 .icodethis {
-  background-image: url("/icodethis.png");
+  background-image: url("/icodethis.webp");
 }
 
 .singleproject:hover {
@@ -63,6 +74,10 @@
   font-weight: 100;
   font-family: "Poppins", sans-serif;
   color: var(--clr-light);
+}
+
+.animation_top {
+  animation: fade-in-left 3s ease;
 }
 
 /* for desktop first *

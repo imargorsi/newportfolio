@@ -1,6 +1,18 @@
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
 .aboutme {
   margin-top: var(--size-xl);
 }
+
 .topsection {
   display: flex;
   justify-content: space-between;
@@ -55,6 +67,10 @@
 .skillsectionimg {
   width: 600px;
   height: 600px;
+}
+
+.skillsectionimg:target {
+  animation: text-focus-in 1s linear 3s 1 normal none;
 }
 
 .skill-item {

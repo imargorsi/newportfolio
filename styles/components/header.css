@@ -1,3 +1,14 @@
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
 @keyframes fade-in-down {
   0% {
     opacity: 0;
@@ -15,9 +26,11 @@ header {
   backdrop-filter: blur(20px);
   padding: var(--size-sm);
   border-radius: 30px;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
+  animation: text-focus-in 3s linear 0s 1 normal none;
 }
 
 .nav {
@@ -98,6 +111,8 @@ header {
   text-transform: uppercase;
   font-size: var(--size-md);
   cursor: pointer;
+  animation: pulse linear infinite;
+  animation-duration: 1.2s;
 }
 
 .navicon {
@@ -106,6 +121,34 @@ header {
 
 .mobilenav {
   display: none;
+}
+
+.mobiblenav__links {
+  display: none;
+}
+
+.mobilenav__buttons {
+  display: none;
+}
+
+.sunicon {
+  display: none;
+}
+
+.mobile__nav__link {
+  display: none;
+}
+
+.mobilenav__hr {
+  display: none;
+}
+
+.iconshref {
+  color: var(--clr-light);
+}
+
+.portfoliobtn {
+  color: var(--clr-light);
 }
 
 @media (max-width: 1280px) {
@@ -185,12 +228,14 @@ header {
   }
 
   .sunicon {
+    display: block;
     width: 3rem;
     padding-top: 1rem;
     color: var(--clr-black);
   }
 
   .mobile__nav__link {
+    display: block;
     font-size: 1.5rem;
     color: var(--clr-black);
     padding-top: 0.7rem;
@@ -198,6 +243,7 @@ header {
   }
 
   .mobilenav__hr {
+    display: block;
     margin: 1rem 0rem;
     width: 90%;
     margin-left: auto;
